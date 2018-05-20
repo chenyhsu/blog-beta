@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ChenyHsu Blog</title>
+  
+  
+  <link href="/blog-beta/atom.xml" rel="self"/>
+  
+  <link href="https://chenyhsu.github.io/blog-beta/"/>
+  <updated>2018-05-20T05:19:52.358Z</updated>
+  <id>https://chenyhsu.github.io/blog-beta/</id>
+  
+  <author>
+    <name>ChenyHsu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Libreoffice : Divide cell diagonally in Writer</title>
+    <link href="https://chenyhsu.github.io/blog-beta/2018/05/20/LO_diagonally_divide_cell/"/>
+    <id>https://chenyhsu.github.io/blog-beta/2018/05/20/LO_diagonally_divide_cell/</id>
+    <published>2018-05-20T05:24:59.740Z</published>
+    <updated>2018-05-20T05:19:52.358Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Step-1-Preparing-a-diagonal-line-svg-file&quot;&gt;&lt;a href=&quot;#Step-1-Preparing-a-diagonal-line-svg-file&quot; class=&quot;headerlink&quot; title=&quot;Step 1 :
+        
+      
+    
+    </summary>
+    
+      <category term="Libreoffice" scheme="https://chenyhsu.github.io/blog-beta/categories/Libreoffice/"/>
+    
+    
+      <category term="FOSS" scheme="https://chenyhsu.github.io/blog-beta/tags/FOSS/"/>
+    
+      <category term="Libreoffice writer" scheme="https://chenyhsu.github.io/blog-beta/tags/Libreoffice-writer/"/>
+    
+      <category term="Libreoffice" scheme="https://chenyhsu.github.io/blog-beta/tags/Libreoffice/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QGIS  import  MrSID (`.sid`) files</title>
+    <link href="https://chenyhsu.github.io/blog-beta/2018/05/20/QGIS_import_MrSID/"/>
+    <id>https://chenyhsu.github.io/blog-beta/2018/05/20/QGIS_import_MrSID/</id>
+    <published>2018-05-19T17:10:18.609Z</published>
+    <updated>2018-05-19T17:10:18.609Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Use-binary-converter-provide-by-lizardtech&quot;&gt;&lt;a href=&quot;#Use-binary-converter-provide-by-lizardtech&quot; class=&quot;headerlink&quot; title=&quot;Use
+        
+      
+    
+    </summary>
+    
+      <category term="GIS" scheme="https://chenyhsu.github.io/blog-beta/categories/GIS/"/>
+    
+    
+      <category term="QGIS" scheme="https://chenyhsu.github.io/blog-beta/tags/QGIS/"/>
+    
+      <category term="MrSID" scheme="https://chenyhsu.github.io/blog-beta/tags/MrSID/"/>
+    
+      <category term="sid" scheme="https://chenyhsu.github.io/blog-beta/tags/sid/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://chenyhsu.github.io/blog-beta/2018/05/19/hello-world/"/>
+    <id>https://chenyhsu.github.io/blog-beta/2018/05/19/hello-world/</id>
+    <published>2018-05-19T14:00:20.861Z</published>
+    <updated>2018-05-19T04:52:39.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
