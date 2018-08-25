@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Install spotify on Linux</title>
+      <link href="/blog-beta/2018/08/25/new/"/>
+      <url>/blog-beta/2018/08/25/new/</url>
+      <content type="html"><![CDATA[<h2 id="1-Install-snapd"><a href="#1-Install-snapd" class="headerlink" title="1.Install snapd"></a>1.Install snapd</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S snapd</span><br></pre></td></tr></table></figure><h2 id="2-Cofigure-snapd"><a href="#2-Cofigure-snapd" class="headerlink" title="2.Cofigure snapd"></a>2.Cofigure snapd</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo systemctl enable --now snapd.socket</span><br><span class="line">Created symlink /etc/systemd/system/sockets.target.wants/snapd.socket → /usr/lib/systemd/system/snapd.socket.</span><br></pre></td></tr></table></figure><h2 id="3-Install-spotify"><a href="#3-Install-spotify" class="headerlink" title="3.Install spotify"></a>3.Install spotify</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo systemctl restart snapd.service</span><br><span class="line"><span class="meta">$</span> snap install spotify</span><br></pre></td></tr></table></figure><p>Then type passwod in the pop-up window (Do not close the terminal)<br><img src="https://i.imgur.com/6ahxDr7.png" alt=""></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> snap install spotify</span><br><span class="line">2018-08-25T20:02:45+08:00 INFO Waiting for restart...</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 34% 1.31MB/s 1m32s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 34% 1.31MB/s 1m31s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 34% 1.31MB/s 1m31s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 34% 1.31MB/s 1m30s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 35% 1.31MB/s 1m30s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 37% 1.31MB/s 1m27s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 43% 1.36MB/s 1m15s</span><br><span class="line">spotify 1.0.88.353.g15c26ea1-14 from 'spotify' installed</span><br></pre></td></tr></table></figure><p>Now you can enjoy the music!</p>]]></content>
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>Libreoffice : Divide cell diagonally in Writer</title>
       <link href="/blog-beta/2018/05/20/LO_diagonally_divide_cell/"/>
       <url>/blog-beta/2018/05/20/LO_diagonally_divide_cell/</url>

@@ -81,16 +81,19 @@
 
 
 
-<meta name="description" content="Something about opensource , photograph , and more">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ChenyHsu Blog">
-<meta property="og:url" content="https://chenyhsu.github.io/blog-beta/index.html">
+<meta name="description" content="1.Install snapd1sudo pacman -S snapd 2.Cofigure snapd12$ sudo systemctl enable --now snapd.socketCreated symlink /etc/systemd/system/sockets.target.wants/snapd.socket → /usr/lib/systemd/system/snapd.s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Install spotify on Linux">
+<meta property="og:url" content="https://chenyhsu.github.io/blog-beta/2018/08/25/new/index.html">
 <meta property="og:site_name" content="ChenyHsu Blog">
-<meta property="og:description" content="Something about opensource , photograph , and more">
+<meta property="og:description" content="1.Install snapd1sudo pacman -S snapd 2.Cofigure snapd12$ sudo systemctl enable --now snapd.socketCreated symlink /etc/systemd/system/sockets.target.wants/snapd.socket → /usr/lib/systemd/system/snapd.s">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:image" content="https://i.imgur.com/6ahxDr7.png">
+<meta property="og:updated_time" content="2018-08-25T12:16:58.404Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ChenyHsu Blog">
-<meta name="twitter:description" content="Something about opensource , photograph , and more">
+<meta name="twitter:title" content="Install spotify on Linux">
+<meta name="twitter:description" content="1.Install snapd1sudo pacman -S snapd 2.Cofigure snapd12$ sudo systemctl enable --now snapd.socketCreated symlink /etc/systemd/system/sockets.target.wants/snapd.socket → /usr/lib/systemd/system/snapd.s">
+<meta name="twitter:image" content="https://i.imgur.com/6ahxDr7.png">
 
 
 
@@ -120,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://chenyhsu.github.io/blog-beta/"/>
+  <link rel="canonical" href="https://chenyhsu.github.io/blog-beta/2018/08/25/new/"/>
 
 
 
 
 
-  <title>ChenyHsu Blog</title>
+  <title>Install spotify on Linux | ChenyHsu Blog</title>
   
 
 
@@ -145,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -259,9 +261,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -291,9 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog-beta/2018/08/25/new/" itemprop="url">Install spotify on Linux</a></h1>
+          <h1 class="post-title" itemprop="name headline">Install spotify on Linux</h1>
         
 
         <div class="post-meta">
@@ -376,17 +376,13 @@
       
 
       
-        
-          
-            <h2 id="1-Install-snapd"><a href="#1-Install-snapd" class="headerlink" title="1.Install snapd"></a>1.Install snapd</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S snapd</span><br></pre></td></tr></table></figure>
+        <h2 id="1-Install-snapd"><a href="#1-Install-snapd" class="headerlink" title="1.Install snapd"></a>1.Install snapd</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S snapd</span><br></pre></td></tr></table></figure>
 <h2 id="2-Cofigure-snapd"><a href="#2-Cofigure-snapd" class="headerlink" title="2.Cofigure snapd"></a>2.Cofigure snapd</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo systemctl enable --now snapd.socket</span><br><span class="line">Created symlink /etc/systemd/system/sockets.target.wants/snapd.socket → /usr/lib/systemd/system/snapd.socket.</span><br></pre></td></tr></table></figure>
 <h2 id="3-Install-spotify"><a href="#3-Install-spotify" class="headerlink" title="3.Install spotify"></a>3.Install spotify</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo systemctl restart snapd.service</span><br><span class="line"><span class="meta">$</span> snap install spotify</span><br></pre></td></tr></table></figure>
 <p>Then type passwod in the pop-up window (Do not close the terminal)<br><img src="https://i.imgur.com/6ahxDr7.png" alt=""></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> snap install spotify</span><br><span class="line">2018-08-25T20:02:45+08:00 INFO Waiting for restart...</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 34% 1.31MB/s 1m32s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 34% 1.31MB/s 1m31s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 34% 1.31MB/s 1m31s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 34% 1.31MB/s 1m30s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 35% 1.31MB/s 1m30s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 37% 1.31MB/s 1m27s</span><br><span class="line">Download snap "spotify" (19) from channel "stable"                                 43% 1.36MB/s 1m15s</span><br><span class="line">spotify 1.0.88.353.g15c26ea1-14 from 'spotify' installed</span><br></pre></td></tr></table></figure>
 <p>Now you can enjoy the music!</p>
 
-          
-        
       
     </div>
     
@@ -403,175 +399,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chenyhsu.github.io/blog-beta/blog-beta/2018/05/20/LO_diagonally_divide_cell/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ChenyHsu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog-beta/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ChenyHsu Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog-beta/2018/05/20/LO_diagonally_divide_cell/" itemprop="url">Libreoffice : Divide cell diagonally in Writer</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-05-20T13:24:59+08:00">
-                2018-05-20
-              </time>
+              <a href="/blog-beta/2018/05/20/LO_diagonally_divide_cell/" rel="next" title="Libreoffice : Divide cell diagonally in Writer">
+                <i class="fa fa-chevron-left"></i> Libreoffice : Divide cell diagonally in Writer
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog-beta/categories/Libreoffice/" itemprop="url" rel="index">
-                    <span itemprop="name">Libreoffice</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blog-beta/2018/05/20/LO_diagonally_divide_cell/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/05/20/LO_diagonally_divide_cell/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="Step-1-Preparing-a-diagonal-line-svg-file"><a href="#Step-1-Preparing-a-diagonal-line-svg-file" class="headerlink" title="Step 1 : Preparing a diagonal line svg file ."></a>Step 1 : Preparing a <strong>diagonal line svg file</strong> .</h2><p>You can draw it with Inkscape by yourself , or download from <a href="https://github.com/chenyhsu/blog-resource/blob/master/libreoffice/diagonal-line.svg" target="_blank" rel="noopener">my<br>github</a></p>
-<h2 id="Step-2-Change-table-cell-background"><a href="#Step-2-Change-table-cell-background" class="headerlink" title="Step 2 : Change table cell background"></a>Step 2 : Change table cell background</h2><h3 id="Step-2-1"><a href="#Step-2-1" class="headerlink" title="Step 2.1 :"></a>Step 2.1 :</h3><p><img src="https://i.imgur.com/GbD4YWu.png" alt=""><br>Right click on desired cell -&gt; Table Properties</p>
-<h3 id="Step-2-2"><a href="#Step-2-2" class="headerlink" title="Step 2.2 :"></a>Step 2.2 :</h3><p><img src="https://i.imgur.com/bKTTFSD.png" alt=""><br>Click <code>Background</code> tab , As : <code>Image</code> , than click <code>File:Browse...</code> , chose the <code>diagonal-line.svg</code></p>
-<h3 id="Step-2-3"><a href="#Step-2-3" class="headerlink" title="Step 2.3 :"></a>Step 2.3 :</h3><p><img src="https://i.imgur.com/m6F6T4G.png" alt=""><br>Change <code>Type</code> to <code>Area</code></p>
-<hr>
-<p><img src="https://i.imgur.com/ehR4lZj.png" alt=""><br>It’s almost done!</p>
-<hr>
-<h2 id="Step-3-Input-amp-adjust-text"><a href="#Step-3-Input-amp-adjust-text" class="headerlink" title="Step 3 : Input &amp; adjust text"></a>Step 3 : Input &amp; adjust text</h2><p><img src="https://i.imgur.com/phuuXpB.png" alt=""><br>Input your text</p>
-<h3 id="Step-3-1-Divide-text-into-two-line-Simply-press-enter"><a href="#Step-3-1-Divide-text-into-two-line-Simply-press-enter" class="headerlink" title="Step 3.1 : Divide text into two line(Simply press enter)"></a>Step 3.1 : Divide text into two line(Simply press enter)</h3><p><img src="https://i.imgur.com/xOSmNn7.png" alt=""></p>
-<h3 id="Step-3-2-Align-text-1st-line-align-to-right-while-2nd-align-to-left"><a href="#Step-3-2-Align-text-1st-line-align-to-right-while-2nd-align-to-left" class="headerlink" title="Step 3.2 : Align text , 1st line align to right , while 2nd align to left."></a>Step 3.2 : Align text , 1st line align to right , while 2nd align to left.</h3><p><img src="https://i.imgur.com/KSd7Lsj.png" alt=""><br><img src="https://i.imgur.com/rDgz9d2.png" alt=""></p>
-<p>Then Adjust column width to meet your need, done!!</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -581,179 +430,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chenyhsu.github.io/blog-beta/blog-beta/2018/05/20/QGIS_import_MrSID/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ChenyHsu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog-beta/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ChenyHsu Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog-beta/2018/05/20/QGIS_import_MrSID/" itemprop="url">QGIS  import  MrSID (`.sid`) files</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-05-20T01:10:18+08:00">
-                2018-05-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog-beta/categories/GIS/" itemprop="url" rel="index">
-                    <span itemprop="name">GIS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blog-beta/2018/05/20/QGIS_import_MrSID/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/05/20/QGIS_import_MrSID/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Use-binary-converter-provide-by-lizardtech"><a href="#Use-binary-converter-provide-by-lizardtech" class="headerlink" title="Use binary converter provide by lizardtech"></a>Use binary converter provide by lizardtech</h2><ul>
-<li>Register a account at <a href="https://www.lizardtech.com/gis-tools/server-development-kit" target="_blank" rel="noopener">https://www.lizardtech.com/gis-tools/server-development-kit</a> , than download newist sdk </li>
-<li>extract the file </li>
-<li><p>open terminal </p>
-<ul>
-<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ./MrSID_DSDK-9.5.4.4709-rhel6.x86-64.gcc482/Raster_DSDK/bin/</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>run the following  conmmand</p>
-<ul>
-<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mrsidinfo -i [input file] -of [format,ex <span class="string">"geotiff"</span>] -o [Output file]</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Compliling-GDAL-with-MrSID-support-Not-necessary"><a href="#Compliling-GDAL-with-MrSID-support-Not-necessary" class="headerlink" title="Compliling GDAL with MrSID support (Not necessary)"></a>Compliling GDAL with MrSID support (Not necessary)</h2><p><a href="https://gist.github.com/oeon/6527004" target="_blank" rel="noopener">https://gist.github.com/oeon/6527004</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -761,6 +442,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -781,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -849,6 +553,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Install-snapd"><span class="nav-number">1.</span> <span class="nav-text">1.Install snapd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Cofigure-snapd"><span class="nav-number">2.</span> <span class="nav-text">2.Cofigure snapd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Install-spotify"><span class="nav-number">3.</span> <span class="nav-text">3.Install spotify</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -982,6 +702,10 @@
   
 
   
+  <script type="text/javascript" src="/blog-beta/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/blog-beta/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -999,6 +723,18 @@
       <script id="dsq-count-scr" src="https://chenyhsu-blog-beta.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://chenyhsu.github.io/blog-beta/2018/08/25/new/';
+          this.page.identifier = '2018/08/25/new/';
+          this.page.title = 'Install spotify on Linux';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://chenyhsu-blog-beta.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
